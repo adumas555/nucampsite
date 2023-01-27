@@ -5,12 +5,12 @@ const initialState = {
   campsitesArray: CAMPSITES,
 };
 
-const campsiteSlice = createSlice({
+const campsitesSlice = createSlice({
   name: "campsites",
   initialState,
 });
 
-export const campsitesReducer = campsiteSlice.reducer;
+export const campsitesReducer = campsitesSlice.reducer;
 
 export const selectAllCampsites = (state) => {
   return state.campsites.campsitesArray;
